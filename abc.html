@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <section>
         <nav>
-            <img src="./Assets/FES.svg" alt="">
+            <img src="./Assets/FES.svg" class="logo" alt="">
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#discord">Discord</a></li>
@@ -19,58 +20,69 @@
             </ul>
         </nav>
         <header>
+            <div class="row">
             <div>
                 <h1>The best place to learn frontend development</h1>
-                <p>Going from being a beginner to an expert in no time!</p>
+                <p class="subheader">Going from being a beginner to an expert in no time!</p>
                 <button>Get Started Now</button>
             </div>
             <figure>
                 <img src="./Assets/laptop.png" alt="Home page image">
             </figure>
+            </div>
         </header>
     </section>
     
     <main>
         <section id="about">
             <h2>About Us</h2>
-            <div>
-            <p>Frontend simplified is a great place to learn how to do frontend development. The mentors are kind and get back to you quickly. At anytime you feel stuck, you can also contact anyone from their community.There are many students and mentors ready and willing to help. </p>
-            <p>If you are worried about the money in which you have to put out for the schooling there's not need. They gaurantee that they will find you a job or you get all our money back plus a thousand dollars! That is how confident they are in their skills to train anyone. Come on and check them out! You won't regret it.</p>
+            <div class="row">
+            <div class="section__description">
+            <div class="section__description--wrapper">
+            <p class="section__description--para">Frontend simplified is a great place to learn how to do frontend development. The mentors are kind and get back to you quickly. At anytime you feel stuck, you can also contact anyone from their community.There are many students and mentors ready and willing to help. </p>
+            <p class="section__description--para">If you are worried about the money in which you have to put out for the schooling there's not need. They gaurantee that they will find you a job or you get all our money back plus a thousand dollars! That is how confident they are in their skills to train anyone. Come on and check them out! You won't regret it.</p>
             </div>
-            <figure>
-                <img src="./Assets/about.jpg" alt="">
+            <figure class="about__img--wrapper">
+                <img src="./Assets/about.png" alt="About us">
             </figure>
+            </div>
+            </div>
         </section>
 
         <section id="discord">
             <h2>Join Our Discord</h2>
-            <div>
-            <p>Join our Discord server to connect with other learners and get real-time support! Discord is available 24/7 for your convenience.</p>
-            <p>On discord, you can ask questions, share your projects, and connect with other developers in a supportive community. Even better you can stay in touch with any friends you make along the way.</p>
-            </div>
-            <figure>
-                <img src="./Assets/discord.png" alt="">
+            <div class="row">
+            <div class="section__description">
+            <figure class="discord__img--wrapper">
+                <img src="./Assets/discord.png" alt="Discord">
             </figure>
+            <div class="section__description--wrapper">
+            <p class="section__description--para">Join our Discord server to connect with other learners and get real-time support! Discord is available 24/7 for your convenience.</p>
+            <p class="section__description--para">On discord, you can ask questions, share your projects, and connect with other developers in a supportive community. Even better you can stay in touch with any friends you make along the way.</p>
+            </div>
+            </div>
+            </div>
         </section>
 
         <section id="contact">
             <h2>Contact Us</h2>
             <form action="">
                 <spam>Email</spam>
-                <input type="text" placeholder="powellkristine706.com">
+                <input type="email" placeholder="powellkristine706.com">
             <spam>Message</spam>
-            <textarea type="type" placeholder="powellkristine706.com"></textarea>
+            <textarea type="type" placeholder="Awesome website! Join now."></textarea>
+            <button>Contact Us</button>
             </form>
         </section>
     </main>
 
     <footer>
-        <img src="./Assets/FES.svg" alt="">
-<div>
-    <a href="#about">About</a>
-    <a href="#discord">Discord</a>
-    <a href="#contact">Contact Us</a>
-<a href="">Courses</a>
+        <img class="footer__logo" src="./Assets/FES.svg" alt="">
+<div class="footer__links">
+    <a class="footer__link" href="#about">About</a>
+    <a class="footer__link" href="#discord">Discord</a>
+    <a class="footer__link" href="#contact">Contact Us</a>
+<a class="footer__link" href="">Courses</a>
 </div>
 <p>&copy; 2024 Frontend Simplified. All rights reserved.</p>
     </footer>
